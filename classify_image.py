@@ -8,7 +8,7 @@ import pprint
 
 
 def recognizeImage(uploadfile,localfile):
-    if not(localfile and uploadfile) or (localfile and uploadfile):
+    if (localfile and uploadfile) or (not(localfile) and not(uploadfile)):
         return {'error' : 'either upload an image OR give path to local DFS file', 'message' : 'failure!'}
 
     elif uploadfile and not(localfile):
@@ -53,6 +53,6 @@ pp = pprint.PrettyPrinter(indent=4)
 parser = argparse.ArgumentParser(description="PyTorch Model trained on cifar-10 to classify images")
 parser.add_argument("--file",type=str, required=False, help="an RGB image file of size 32x32 in either of the classes ['airplane', 'automobile', 'bird', 'cat', 'deer','dog', 'frog', 'horse', 'ship', 'truck']",default=None)
 parser.add_argument("--localfile",type=str,required=False,help="path to local DFS file",default=None)
-args = parser.parse_args()
 
-pp.pprint(recognizeImage(args.file),args.localfile)
+args = parser.parse_args()
+pp.pprint(recognizeImage(args.file,args.localfile))
