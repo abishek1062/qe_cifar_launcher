@@ -2,6 +2,8 @@
 
 - The trained model i.e. state dictionary is at '.model_cifar.pt' 
 
+- The directory sample-cifar-10 contains some images from the cifar-10 dataset 
+
 - In order to use the launcher either upload an image or enter a path of local DFS file
 
 - Only a 32x32 RGB image can be processed.
