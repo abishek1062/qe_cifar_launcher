@@ -1,12 +1,13 @@
+appdirs==1.4.4
 certifi==2020.6.20
-click==7.1.2
-Flask==1.1.2
-itsdangerous==1.1.0
-Jinja2==2.11.2
-MarkupSafe==1.1.1
-numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1596233737064/work
+distlib==0.3.1
+mkl-fft==1.2.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1596233721170/work
 olefile==0.46
-Pillow @ file:///tmp/build/80754af9/pillow_1594307298074/work
+Pillow @ file:///tmp/build/80754af9/pillow_1602788711040/work
 six==1.15.0
-Werkzeug==1.0.1
-gunicorn
+torch==1.6.0
+torchvision==0.7.0
+virtualenv==20.0.26
